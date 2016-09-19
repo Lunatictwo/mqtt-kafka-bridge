@@ -9,7 +9,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 public class MqttHandler {
 
-	public static String MQTT_BROKER = "tcp://120.24.185.237:1883";
+	public static String MQTT_BROKER = "tcp://xxx.xxx.xxx.xxx:1883";
 	public static String MQTT_USERNAME = "admin";
 	public static String MQTT_PASSWORD = "password";
 	public static String MQTT_PUB_TOPIC = "BS_DOWN_TOPIC";
