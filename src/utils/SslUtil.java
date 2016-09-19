@@ -17,6 +17,10 @@ import javax.net.ssl.TrustManagerFactory;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.openssl.*;
 
+/**
+ * SSL Util
+ *
+ */
 public class SslUtil {
 	static SSLSocketFactory getSocketFactory(final String caCrtFile, final String crtFile, final String keyFile,
 			final String password) throws Exception {
@@ -66,5 +70,6 @@ public class SslUtil {
 		context.init(kmf.getKeyManagers(), tmf.getTrustManagers(), null);
 
 		return context.getSocketFactory();
+		
 	}
 }
